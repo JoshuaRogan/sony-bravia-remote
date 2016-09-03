@@ -1,0 +1,28 @@
+{
+  "name": "sony-bravia-tv-remote",
+  "version": "1.0.0",
+  "description": "An interface to send signals directly to an Andriod TV powered Sony Bravia TV.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshuaRogan/sony-bravia-remote.git"
+  },
+  "keywords": [
+    "sony",
+    "bravia",
+    "remote",
+    "wifi",
+    "network",
+    "andriod",
+    "andriodtv"
+  ],
+  "author": "Josh Rogan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoshuaRogan/sony-bravia-remote/issues"
+  },
+  "homepage": "https://github.com/JoshuaRogan/sony-bravia-remote#readme"
+}
