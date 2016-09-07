@@ -4,8 +4,11 @@
   "description": "An interface to send signals directly to an Andriod TV powered Sony Bravia TV.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -f dist/* && babel src -d dist --source-maps",
   },
+  "pre-commit": [
+    "build"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JoshuaRogan/sony-bravia-remote.git"
@@ -24,5 +27,11 @@
   "bugs": {
     "url": "https://github.com/JoshuaRogan/sony-bravia-remote/issues"
   },
-  "homepage": "https://github.com/JoshuaRogan/sony-bravia-remote#readme"
+  "homepage": "https://github.com/JoshuaRogan/sony-bravia-remote#readme",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "pre-commit": "^1.1.3"
+  }
 }
