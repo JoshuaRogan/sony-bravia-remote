@@ -1,8 +1,8 @@
 {
   "name": "sony-bravia-tv-remote",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "An interface to send signals directly to an Andriod TV powered Sony Bravia TV.",
-  "main": "dist/index.js",
+  "main": "dist/BraviaRemoteControl.js",
   "scripts": {
     "build": "rm -f dist/* && babel src -d dist --source-maps",
     "test": "npm run build && jasmine dist/*.spec.js",
