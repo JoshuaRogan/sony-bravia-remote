@@ -1,18 +1,18 @@
 import http from 'http';
 
-/** @type {Boolean} Debug flag */
+/** @type {Boolean} httpDebug Debug flag */
 const httpDebug = false;
 
-/** @type {Number} Standard time between requests */
+/** @type {Number} DEFAULT_TIME_BETWEEN_COMMANDS Standard time between requests */
 const DEFAULT_TIME_BETWEEN_COMMANDS = 350;
 
-/** @type {Number} Time to wait between long commands like home to make sure they finish */
+/** @type {Number} PAUSED_TIME_BETWEEN_COMMANDS Time to wait between long commands like home to make sure they finish */
 const PAUSED_TIME_BETWEEN_COMMANDS = 3000;
 
-/** @type {String} Endpoint to send signals to */
+/** @type {String} braviaIRCCEndPoint Endpoint to send signals to */
 const braviaIRCCEndPoint = '/sony/IRCC';
 
-/** @type {Object} Lookup table to convert an action to its IRCC signal */
+/** @type {Object} actionMap Lookup table to convert an action to its IRCC signal */
 const actionMap = {
 	power: 'AAAAAQAAAAEAAAAVAw==',
 	home: 'AAAAAQAAAAEAAABgAw==',
@@ -29,7 +29,7 @@ const actionMap = {
 	play: 'AAAAAgAAAJcAAAAaAw==',
 };
 
-/** @type {Object} Alternate action names lookup table */
+/** @type {Object} actionLookUpTable Alternate action names lookup table */
 const actionLookUpTable = {
 	'enter': 'confirm',
 };
