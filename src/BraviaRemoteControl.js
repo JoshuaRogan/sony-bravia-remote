@@ -213,3 +213,5 @@ export default class BraviaRemoteControl {
 	}
 
 }
+
+module.exports = BraviaRemoteControl;
