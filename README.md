@@ -33,6 +33,15 @@ remote.sendActionSequence('down down enter'); // Moves down twice then presses e
 remote.openAppSeq('down down right'); // Sends home, then down down right, then confirm
 ```
 
+You can use it as a ES6 import just as well:
+
+```javascript
+import BraviaRemoteControl from 'sony-bravia-remote';
+
+// Connect to a local sony tv at 192.168.1.2:80 with the auth key of 0000
+const remote = new BraviaRemoteControl('192.168.1.2', 80, '0000');
+...
+```
 
 ## Helpful Resources
 
