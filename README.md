@@ -1,6 +1,6 @@
 # Sony Bravia Remote Control Module
 
-This package helps interface with a sony bravia Andriod powered smart tv.
+This package helps interface with a sony bravia Android powered smart tv.
 
 ## Setup
 
@@ -12,11 +12,11 @@ To connect to your Sony TV you need to know the local IP address (e.g. 192.168.1
 
 ### Remote
 
-You can connect to your TV remotely just as easily as locally but with using your external IP (e.g. 73.17.832.11) address and setting up port forwarding on your router.
+You can connect to your TV remotely as easily as locally but with using your external IP (e.g. 73.17.832.11) address and setting up port forwarding on your router.
 
 ### AuthKey
 
-To allow the TV to accept signals you have to send an auth key. This can be configured on the TV itself and defaults to 0000[Setting up pre-shared auth-key Instructions](https://github.com/breunigs/bravia-auth-and-remote#setup)
+To allow the TV to accept signals you have to send an auth key. This is configurable on the TV itself and defaults to 0000[Setting up pre-shared auth-key Instructions](https://github.com/breunigs/bravia-auth-and-remote#setup)
 
 ## Install with npm
 
