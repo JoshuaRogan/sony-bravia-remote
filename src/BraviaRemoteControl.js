@@ -1,4 +1,5 @@
 import http from 'http';
+import actionMap from './ActionMap';
 
 /** @type {Boolean} httpDebug Debug flag */
 const httpDebug = false;
@@ -12,26 +13,9 @@ const PAUSED_TIME_BETWEEN_COMMANDS = 3000;
 /** @type {String} braviaIRCCEndPoint Endpoint to send signals to */
 const braviaIRCCEndPoint = '/sony/IRCC';
 
-/** @type {Object} actionMap Lookup table to convert an action to its IRCC signal */
-const actionMap = {
-	power: 'AAAAAQAAAAEAAAAVAw==',
-	home: 'AAAAAQAAAAEAAABgAw==',
-	down: 'AAAAAQAAAAEAAAB1Aw==',
-	up: 'AAAAAQAAAAEAAAB0Aw==',
-	left: 'AAAAAQAAAAEAAAA0Aw==',
-	right: 'AAAAAQAAAAEAAAAzAw==',
-	confirm: 'AAAAAQAAAAEAAABlAw==',
-	exit: 'AAAAAQAAAAEAAABjAw==',
-	mute: 'AAAAAQAAAAEAAAAUAw==',
-	'volume up': 'AAAAAQAAAAEAAAASAw==',
-	'volume down': 'AAAAAQAAAAEAAAATAw==',
-	pause: 'AAAAAgAAAJcAAAAZAw==',
-	play: 'AAAAAgAAAJcAAAAaAw==',
-};
-
 /** @type {Object} actionLookUpTable Alternate action names lookup table */
 const actionLookUpTable = {
-	'enter': 'confirm',
+	'Enter': 'Confirm',
 };
 
 export default class BraviaRemoteControl {
