@@ -29,10 +29,10 @@ Usage as a module with node or with ES6 Import
 ```javascript
 
 //As module
-const BraviaRemoteControl = require('sony-bravia-remote');
+const BraviaRemoteControl = require('sony-bravia-tv-remote');
 
 // As ES6 Import
-import BraviaRemoteControl from 'sony-bravia-remote';
+import BraviaRemoteControl from 'sony-bravia-tv-remote';
 
 // Connect to a local sony tv at 192.168.1.2:80 with the auth key of 0000
 const remote = new BraviaRemoteControl('192.168.1.2', 80, '0000');
@@ -41,14 +41,15 @@ const remote = new BraviaRemoteControl('192.168.1.2', 80, '0000');
 const networkRemote = new BraviaRemoteControl('externaldomain.com', 44444, '0000');
 
 // Send some single actions (all return promises)
-remote.sendAction('power'); // turns on or off the tv
-remote.sendAction('mute'); // mutes the tv
+remote.sendAction('PowerOn'); // turns on
+remote.sendAction('PowerOff'); // turns off
+remote.sendAction('Mute'); // mutes the tv
 
 // Send sequences of actions (sent synchronously with delays)
-remote.sendActionSequence('down down enter'); // Moves down twice then presses enter
+remote.sendActionSequence('Down Down Enter'); // Moves down twice then presses enter
 
 //Open an app at a location on the app by navigating to it
-remote.openAppSeq('down down right'); // Sends home, then down down right, then confirm
+remote.openAppSeq('Down Down Right'); // Sends home, then down down right, then confirm
 ```
 
 
